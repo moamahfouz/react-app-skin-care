@@ -1,38 +1,309 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400&display=swap');
+
+:root {
+  --main-color: #363873;
+  --white: #fff;
+  --body-background: #f8f8f8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 100%;
+  padding-right: 2.5em;
+  padding-left: 2.5em;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+body {
+  background: var(--body-background);
+  font-family: 'Cairo', sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bg-primary {
+  background: var(--body-background) !important;
+}
+
+.white__text {
+  color: var(--white);
+}
+
+.text__center {
+  text-align: center !important;
+}
+
+.padding {
+  padding: 10px;
+}
+
+.text__bold {
+  font-weight: 800;
+}
+
+.d__block {
+  display: block;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+}
+
+.rounded {
+  border-radius: 50rem
+}
+
+.bg-prime {
+  background: var(--main-color) !important;
+}
+
+.text-primary {
+  color: var(--main-color) !important;
+}
+
+.mg__top {
+  margin-top: 2em !important;
+}
+
+.btn {
+  border: 0;
+  outline: 0;
+}
+
+.mg_auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon__s {
+  width: 100px;
+  margin: 0 auto;
+  background: #363873;
+  padding: 10px;
+  color: #fff;
+  border-radius: 26px;
+  line-height: 0;
+}
+
+.icon__s svg {
+  font-size: 2em;
+}
+
+.d__none {
+  display: none;
+}
+
+.navbar {
+  padding: 15px;
+}
+
+.progress {
+  background: #e9ecef;
+}
+
+.in__between {
+  justify-content: space-between
+}
+
+.justify__center {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.img__res {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.justify-content-center {
+  justify-content: center;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+
+.brand, .btn__header {
+  display: inline-block;
+}
+
+.btn__header {
+  float: left;
+  margin: 15px;
+}
+
+.btn__header a {
+  padding: 5px 43px;
+  border-radius: 15px;
+}
+
+.discover__btn {
+  padding: 10px 9em;
+}
+
+.btn__play {
+  padding: 10px 1.5em;
+}
+
+.text-bold {
+  font-weight: 800;
+}
+
+
+.typed-text {
+  color: #6101ff;
+}
+
+span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: typing 1s infinite;
+}
+
+span.cursor.typing {
+  animation: none;
+}
+
+
+ol.tasks {
+  list-style: none;
+  counter-reset: ol-counter;
+}
+
+ol.tasks li {
+  counter-increment: ol-counter;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+ol.tasks li::before {
+  content: counter(ol-counter);
+  color: var(--main-color);
+  font-weight: bold;
+  padding-left: 8px;
+  font-size: 1.8rem;
+}
+
+footer {
+  background-color: var(--main-color);
+  color: var(--white);
+  display: flex;
+  margin-top: 4em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  padding: 2rem;
+}
+
+
+.labelClass {
+  background: #fff;
+  border: 2px solid #363873;
+  padding: 10px 29px;
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  background: #363873;
+  border: 2px solid #363873;
+  color: #fff;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+}
+
+.controls a {
+  cursor: pointer;
+}
+
+.controls svg {
+  font-size: 2em;
+}
+
+
+.frm_ctrl {
+  width: 100%;
+  font-family: 'Cairo', sans-serif;
+  padding: 5px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .col-6 {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .btn__header a {
+    padding: 5px 20px;
+  }
+
+  .discover__btn {
+    padding: 10px 1em;
+  }
+}
+
+
+@keyframes typing {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
   }
 }

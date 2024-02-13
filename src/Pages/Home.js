@@ -36,7 +36,7 @@ function Home() {
                         </p>
 
                     </div>
-                    <div className="col-6 hide__mobile"><img src="/images/header_img.png" className="img-fluid"
+                    <div className="col-6 hide__mobile"><img src="/images/cartoon.png" className="img-fluid"
                                                              alt="Image!"/>
                     </div>
                 </div>
@@ -50,7 +50,9 @@ function Home() {
 
                 <div className="row mg__top">
                     <div className="col-6">
-                        <img src="/images/img_app.png" className="img-fluid" alt=""/>
+                        <img src="/images/screen+time.png" className="img-fluid"
+                             width="450"
+                             alt=""/>
                     </div>
 
                     <div className="col-6 mg__top">

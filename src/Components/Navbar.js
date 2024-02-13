@@ -7,9 +7,9 @@ const Navbar = () => {
                 <div className="brand">
                     <a className="navbar-brand m-auto active" href="/">
                         <img
-                            src="/images/logo.png"
+                            src="/images/mf-logo.svg"
                             alt="App Logo"
-                            width="200"
+                            width="50"
                             height="50"
                             style={{ maxWidth: '100%', height: 'auto' }}
                         />

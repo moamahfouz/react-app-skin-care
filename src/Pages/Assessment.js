@@ -15,15 +15,26 @@ const Assessment = () => {
     const questions = questionsData;
 
     const next = () => {
-        // ... your existing next function logic
+        if (index < questions.length - 1) {
+            setIndex(index + 1);
+        } else {
+            // If the last question, navigate to the result page
+            // You can replace this with your routing logic
+            console.log('Show result page');
+        }
     };
 
+
     const back = () => {
-        // ... your existing back function logic
+        if (index > 0) {
+            setIndex(index - 1);
+        }
     };
 
     const submitAnswer = (questionIndex, selectedAnswer) => {
-        // ... your existing submitAnswer function logic
+        const updatedAnswers = [...userAnswers];
+        updatedAnswers[questionIndex] = selectedAnswer;
+        setUserAnswers(updatedAnswers);
     };
 
 

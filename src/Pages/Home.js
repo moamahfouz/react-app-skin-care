@@ -58,7 +58,7 @@ function Home() {
                     <div className="col-6 mg__top">
                         <h1 className="text-primary">نقوم بالعمل المجهد بدلا منك</h1>
                         <div className="my-5">
-                            <img src="/images/logo.png" className="d-inline" width="90"/>
+                            <img src="/images/mf-logo.svg" className="d-inline" width="30"/>
                             <span>هو برنامج مطور خصيصًا لمساعدتك في اختيار الروتين الأنسب لك بدقة واحترافية،وفي غضون دقيقتين فقط.</span>
                         </div>
 
